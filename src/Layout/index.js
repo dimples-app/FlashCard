@@ -3,6 +3,11 @@ import Header from "./Header";
 import NotFound from "./NotFound";
 
 function Layout() {
+
+  function handleDeleteDeck() {
+
+  }
+  
   return (
     <>
       <Header />
