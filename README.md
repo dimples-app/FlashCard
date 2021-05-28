@@ -29,3 +29,38 @@ Responsive Flash Card Application where user can
   
   
   ### Screens
+  
+  #### Home
+  
+  ![Home](https://github.com/dimples-app/FlashCard/blob/main/Assets/Flash_Card_Home.png)
+  
+  #### Create Desk
+  
+  ![Create-Deck](https://github.com/dimples-app/FlashCard/blob/main/Assets/FlashCard_Create_Deck.png)
+  
+  #### Edit Deck
+ 
+  ![Edit-Deck](https://github.com/dimples-app/FlashCard/blob/main/Assets/Flash_Card_Edit_Deck.png)
+  
+  #### Add Card
+  
+  ![Add-Deck](https://github.com/dimples-app/FlashCard/blob/main/Assets/Flash_Card_Add_Card.png)
+  
+  #### Edit Card
+  
+  ![Edit-Deck](https://github.com/dimples-app/FlashCard/blob/main/Assets/Flash_Card_Edit_Card.png)
+  
+  #### View Card
+  
+  ![View-Deck](https://github.com/dimples-app/FlashCard/blob/main/Assets/Flash_Card_View_Card.png)
+  
+  #### Study Card
+  
+  ![Study-Card](https://github.com/dimples-app/FlashCard/blob/main/Assets/Flash_Card_Study_Card.png)
+  
+  #### Notification/ alert
+  
+  ![Alert](https://github.com/dimples-app/FlashCard/blob/main/Assets/Alert.png)
+  
+  
+  
