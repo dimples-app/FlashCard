@@ -3,13 +3,18 @@ import { Link } from "react-router-dom";
 
 //style breadcrumbs
 const breadcrumb = {
-    backgroundColor: 'white',
-    border: '1px solid rgba(0, 0, 0, 0.125)',
-    borderRadius: '0.37rem'
-  }
+  backgroundColor: 'white',
+  border: '1px solid rgba(0, 0, 0, 0.125)',
+  borderRadius: '0.37rem'
+}
 
-function Breadcrumb() {
-    const { crumbs = [] } = props;
+/**
+ * 
+ * @param {component for breadcrumbs} props 
+ * @returns 
+ */
+function Breadcrumb(props) {
+  const { crumbs = [] } = props;
 
   /**
    * To checks if that crumb is the last one in the list
@@ -41,4 +46,4 @@ function Breadcrumb() {
   );
 }
 
-export default Breadcrumb
+export default Breadcrumb;
