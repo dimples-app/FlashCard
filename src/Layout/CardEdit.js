@@ -4,8 +4,8 @@ import CardForm from "./CardForm";
 import { readDeck } from "../utils/api/index";
 import Breadcrumb from "./Breadcrumb";
 
-function CardEdit(props) {
-    const { deckId, cardId } = useParams();
+function CardEdit() {
+  const { deckId, cardId } = useParams();
   const [deck, setDeck] = useState(null);
 
   useEffect(() => {
@@ -38,4 +38,4 @@ function CardEdit(props) {
   }
 }
 
-export default CardEdit
+export default CardEdit;
