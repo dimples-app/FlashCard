@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 /**
- * display items in deck
+ * Display deck items
  * @param {*} props 
  * @returns 
  */
-function DeckItems(props) {
-    const { name, description, handleDeleteDeck } = props;
+function DeckItem(props) {
+  const { name, description, handleDeleteDeck } = props;
   const { deckId } = useParams();
 
   return (
@@ -39,4 +39,4 @@ function DeckItems(props) {
   );
 }
 
-export default DeckItems
+export default DeckItem;
