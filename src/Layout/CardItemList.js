@@ -1,14 +1,16 @@
-import React from 'react'
+import React from "react";
 import { useParams } from "react-router";
-import CardItems from "./CardItem";
+import CardItem from "./CardItem";
 import { deleteCard, readDeck } from "../utils/api/index";
+
 /**
  * component to display list of cards in deck
- * @param {*} props 
+ * @param {} props 
  * @returns 
  */
 function CardItemList(props) {
-    const { deckId } = useParams();
+  
+  const { deckId } = useParams();
   const { cards } = props;
   const {setDeck} = props;
 
@@ -36,7 +38,7 @@ function CardItemList(props) {
       <h2>Cards</h2>
       <ul className="list-group">
         {cards.map((card) => (
-          <CardItems
+          <CardItem
             key={card.id}
             card={card}
             handleDeleteCard={handleDeleteCard}
@@ -51,4 +53,4 @@ function CardItemList(props) {
   );
 }
 
-export default CardItemList
+export default CardItemList;
