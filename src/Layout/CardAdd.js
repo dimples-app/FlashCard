@@ -3,14 +3,13 @@ import { useParams } from "react-router-dom";
 import { readDeck } from "../utils/api/index";
 import CardForm from "./CardForm";
 import Breadcrumb from "./Breadcrumb";
-
 /**
  * Add cards to deck
  * read deck from api
  * @returns 
  */
-function CardAdd(props) {
-    const { deckId } = useParams();
+function CardAdd() {
+  const { deckId } = useParams();
   const [deck, setDeck] = useState(null);
 
   //call to readDeck, return promise
@@ -38,4 +37,4 @@ function CardAdd(props) {
   }
 }
 
-export default CardAdd
+export default CardAdd;
