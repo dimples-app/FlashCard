@@ -11,7 +11,7 @@ import Study from './Study';
 import DeckItemList from './DeckItemList';
 
 function RoutesDisplay(props) {
-    const { decks, handleDeleteDeck } = props;
+  const { decks, handleDeleteDeck } = props;
     return (
         <div>
         <Switch>
