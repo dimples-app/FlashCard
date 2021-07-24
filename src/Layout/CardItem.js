@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 /**
- * Display items in card
- * @param {*} props 
+ * Display Card Items
+ * @param {} props 
  * @returns 
  */
-function CardItems(props) {
-    const { card:{front, back, id}, handleDeleteCard } = props;
+function CardItem(props) {
+  const { card:{front, back, id}, handleDeleteCard } = props;
   const { deckId } = useParams();
 
   return (
@@ -39,4 +39,4 @@ function CardItems(props) {
   );
 }
 
-export default CardItems
+export default CardItem;
