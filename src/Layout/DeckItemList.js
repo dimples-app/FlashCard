@@ -2,13 +2,18 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { readDeck } from "../utils/api/index";
 import CardItemList from "./CardItemList";
-import DeckItems from "./DeckItem";
+import DeckItem from "./DeckItem";
 import Breadcrumb from "./Breadcrumb";
+/**
+ * Display Deck items list
+ * @param {*} props 
+ * @returns 
+ */
 
-function DeckItemsList(props) {
-    const { handleDeleteDeck } = props;
-    const { deckId } = useParams();
-    const [deck, setDeck] = useState(null);
+function DeckItemList(props) {
+  const { handleDeleteDeck } = props;
+  const { deckId } = useParams();
+  const [deck, setDeck] = useState(null);
 
   useEffect(() => {
     const abortController = new AbortController();
@@ -25,7 +30,7 @@ function DeckItemsList(props) {
     const renderItemList = (
       <div className="mb-2 mt-2">
         <Breadcrumb crumbs={["Home", deck.name]} />
-        <DeckItems
+        <DeckItem
           name={deck.name}
           description={deck.description}
           handleDeleteDeck={handleDeleteDeck}
@@ -41,4 +46,5 @@ function DeckItemsList(props) {
   }
 }
 
-export default DeckItemsList
+export default DeckItemList;
+
